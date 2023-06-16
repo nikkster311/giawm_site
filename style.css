@@ -13,7 +13,7 @@
   src: url(./assets/Nanum_Myeongjo/NanumMyeongjo-Regular.ttf);
 }
 
-* {
+body {
   font-family: NM-Extra-Bold;
   background-color: #07300f;
   color: #edebe9;
@@ -57,6 +57,7 @@ h3 {
 .text-wrapper {
   z-index: 2;
   position: absolute;
+  padding-top: 150px;
 }
 
 .img-wrapper {
@@ -65,6 +66,10 @@ h3 {
 }
 .img-wrapper img {
   opacity: 0.6;
+}
+
+.ml-embedded {
+  padding-top: 30px;
 }
 
 @media screen and (max-width: 900px) {
