@@ -27,8 +27,8 @@ p {
 }
 
 h1 {
-  font-family: NM-Bold;
   font-size: 5rem;
+  font-family: NM-Bold;
   margin: 25px;
 }
 h2 {
@@ -38,6 +38,7 @@ h2 {
 }
 
 h3 {
+  font-size: 30px;
   font-family: NM-Extra-Bold;
 }
 
@@ -47,7 +48,7 @@ h3 {
 .coming-soon-wrapper,
 .text-wrapper {
   display: flex;
-  height: 100vh;
+  height: 85vh;
   background: transparent;
   flex-direction: column;
   align-items: center;
@@ -72,16 +73,47 @@ h3 {
   padding-top: 30px;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 700px) {
   h1 {
-    font-size: 6rem;
-    color: yellow;
+    font-size: 4rem;
+    margin: 25px 50px;
+  }
+  h3 {
+    font-size: 22px;
+  }
+  .text-wrapper {
+    padding-top: 0;
+  }
+  .img-wrapper {
+    top: -165px;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .img-wrapper,
+  .img-wrapper img {
+    width: 100%;
+  }
+  .coming-soon-wrapper {
+    height: 97vh;
+  }
+  h1 {
+    margin: 25px;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  h1 {
+    font-size: 3rem;
   }
   h2 {
-    font-size: 45px;
+    font-size: 22px;
   }
-
   h3 {
-    font-size: 30px;
+    font-size: 18px;
+  }
+  .coming-soon-wrapper {
+    margin: 20px;
+    height: 92vh;
   }
 }
